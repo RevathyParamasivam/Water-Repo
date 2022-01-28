@@ -42,6 +42,7 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 40px;
+  
 }
 .section-header h2 {
   font-size: 13px;
@@ -155,17 +156,22 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  height: 90px;
+  background: rgb(234,247,255);
+
 }
-.header.header-scrolled {
-  background: #fff;
+#header.header-scrolled {
+  background: rgba(0, 0, 0, 0.8);
   padding: 15px 0;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  height:64px;
 }
 .header .logo {
   line-height: 0;
+  margin-bottom: 5px;
+  margin-top: -20px;
 }
 .header .logo img {
-  max-height: 120px;
+  max-height: 80px;
   
 }
 .header .logo span {
@@ -174,7 +180,7 @@ section {
   letter-spacing: 1px;
   color: #012970;
   font-family: "Nunito", sans-serif;
-  margin-top: 3px;
+  margin-top: 0px;
 }
 
 /*--------------------------------------------------------------
