@@ -8,6 +8,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;
+}
+.bluehead{
+  color:#000080;
+
+}
 :root {
   scroll-behavior: smooth;
 }
@@ -44,20 +53,15 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
-
+.greenColor{
+  background-color: rgb(0,128,0);
+}
 .section-header {
   text-align: center;
   padding-bottom: 40px;
   
 }
-.section-header h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 0;
-  color: #4154f1;
-  text-transform: uppercase;
-}
+
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
@@ -199,7 +203,9 @@ ul li{
   visibility: visible;
   opacity: 1;
 }
-
+.span{
+  font-size: 60px;
+}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -214,8 +220,8 @@ ul li{
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
-  height: 90px;
+  padding: 0px 0;
+  height: 120px;
   background: rgb(246,249,255);
 
 }
@@ -227,7 +233,7 @@ ul li{
 .header .logo {
   line-height: 0;
   margin-bottom: 5px;
-  margin-top: -20px;
+  margin-top: -5px;
 }
 .header .logo img {
   max-height: 80px;
@@ -244,6 +250,55 @@ ul li{
 .header h3
 {
   font-size: 30px;
+}
+.header .containerTop{
+  height:45px;
+  background: rgb(0,128,0);
+  margin:auto;
+  padding:10px;
+  color:#fff;
+
+}
+.alignleft {
+ 	text-align: justify;
+  align-items: center; 
+  
+}
+.alignright {
+	text-align: justify;
+  text-align-last: right;
+}
+.centerCol
+{
+  display:block;
+}
+
+@media (max-width: 500px) {
+  .header .containerTop{
+  height:81px;
+  display:block;
+}
+.alignleft {
+  
+  text-align: justify;
+  text-align:center;
+}
+.alignright {
+  
+	text-align: justify;
+  text-align:center;
+  
+}
+.centerCol
+{
+  display:none;
+}
+.header {
+  height: 150px;
+  
+
+}
+
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -3122,13 +3177,10 @@ label {
 	margin-bottom: 10px;
 }
 
-.panel-default,
-.panel-default>.panel-heading {
-	border-color: #e7ecf1;
-	color: inherit;
-}
 
-.panel-default>.panel-heading+.panel-collapse>.panel-body {
-	border-top-color: #e7ecf1;
-}
 
+.panel-primary>.panel-heading {
+    color: #000080;
+    background-color: #dcdcdc;
+    
+}
